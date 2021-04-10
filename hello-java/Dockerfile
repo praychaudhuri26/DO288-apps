@@ -16,11 +16,7 @@ ADD   https://github.com/RedHatTraining/DO288-apps/releases/download/OCP-4.1-1/h
 
 COPY  run-app.sh /opt/app-root/bin/
 
-<<<<<<< HEAD
-RUN   chgrp -R 0  /opt/app-root && \
-=======
 RUN   chgrp  -R 0  /opt/app-root && \
->>>>>>> aa1f26a52b3ed2fb10e29ed93e51736f54cd9f0a
       chmod -R g=u /opt/app-root
 
 EXPOSE 8080
